@@ -1,0 +1,30 @@
+.items {
+	display: flex;
+	height: 500px;
+
+
+	&--primary {
+		width: 100px;
+		background-color: $primary-color;
+		&--light{
+			background-color: $primary-color-light;
+		}
+	}
+
+	&--secondary {
+		width: 100px;
+		background-color: $secondary-color;
+	}
+
+
+	&--tertiary {
+	width: 100px;
+	background-color: $tertiary-color;
+	}
+
+	&--quaternary {
+	width: 100px;
+	background-color: $quaternary-color;
+	}
+
+}
