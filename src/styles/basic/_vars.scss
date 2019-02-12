@@ -9,19 +9,22 @@ $version: "0.0.1";
 // Colors ------------------------------------------------------------------------------------ //
 
 
+
+
+
 // Core colors
-$primary-color: #5755d9 !default;
-$primary-color-dark: darken($primary-color, 3%) !default;
-$primary-color-light: lighten($primary-color, 13%) !default;
-$secondary-color: lighten($primary-color, 37.5%) !default;
-$secondary-color-dark: darken($secondary-color, 3%) !default;
-$secondary-color-light: lighten($secondary-color, 3%) !default;
-$tertiary-color: #ffb700 !default;
-$tertiary-color-dark: darken($tertiary-color, 30%) !default;
-$tertiary-color-light: lighten($tertiary-color, 30%) !default;
-$quaternary-color: #e85600 !default;
-$quaternary-color-dark: darken($quaternary-color, 30%) !default;
-$quaternary-color-light: lighten($quaternary-color, 30%) !default;
+$primary: #0055d9 !default;
+$primary-dark: darken($primary, 3%) !default;
+$primary-light: lighten($primary, 13%) !default;
+$secondary: lighten($primary, 37.5%) !default;
+$secondary-dark: darken($secondary, 3%) !default;
+$secondary-light: lighten($secondary, 3%) !default;
+$tertiary: #ffb700 !default;
+$tertiary-dark: darken($tertiary, 30%) !default;
+$tertiary-light: lighten($tertiary, 30%) !default;
+$quaternary: #e80000 !default;
+$quaternary-dark: darken($quaternary, 30%) !default;
+$quaternary-light: lighten($quaternary, 30%) !default;
 
 // Gray colors
 $dark-color: #454d5d !default;
@@ -45,7 +48,7 @@ $warning-color: #ffb700 !default;
 $error-color: #e85600 !default;
 
 // Link Colors
-$link-color: $primary-color !default;
+$link-color: $primary !default;
 $link-color-dark: darken($link-color, 10%) !default;
 $link-color-light: lighten($link-color, 10%) !default;
 
@@ -56,18 +59,18 @@ $body-bg: $bg-color-light !default;
 $body-font-color: lighten($dark-color, 5%) !default;
 
 $colors: (
-	'primary-color': $primary-color,
-	'primary-color-dark': $primary-color-dark,
-	'primary-color-light': $primary-color-light,
-	'secondary-color': $secondary-color,
-	'secondary-color-dark': $secondary-color-dark,
-	'secondary-color-light': $secondary-color-light,
-	'tertiary-color': $tertiary-color,
-	'tertiary-color-dark': $tertiary-color-dark,
-	'tertiary-color-light': $tertiary-color-light,
-	'quaternary-color': $quaternary-color,
-	'quaternary-color-dark': $quaternary-color-dark,
-	'quaternary-color-light': $quaternary-color-light,
+	'primary': $primary,
+	'primary-dark': $primary-dark,
+	'primary-light': $primary-light,
+	'secondary': $secondary,
+	'secondary-dark': $secondary-dark,
+	'secondary-light': $secondary-light,
+	'tertiary': $tertiary,
+	'tertiary-dark': $tertiary-dark,
+	'tertiary-light': $tertiary-light,
+	'quaternary': $quaternary,
+	'quaternary-dark': $quaternary-dark,
+	'quaternary-light': $quaternary-light,
 	'dark-color': $dark-color,
 	'light-color': $light-color,
 	'gray-color': $gray-color,

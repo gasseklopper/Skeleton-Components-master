@@ -23,8 +23,8 @@
 
 		$colorFont: null;
 
-		@if lightness($color) <= 50% { $colorFont: light-color; }
-		@if lightness($color) > 50% { $colorFont: dark-color; }
+		@if lightness($color) <= 50% { $colorFont: $light-color; }
+		@if lightness($color) > 50% { $colorFont: $dark-color; }
 
 		&--#{ $colorName } {
 

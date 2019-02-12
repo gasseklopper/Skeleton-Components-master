@@ -1,0 +1,26 @@
+	.styleguide_colors {
+		padding: $gutter;
+		transition: transform $duration $timing;
+
+		&:hover {
+			color: color('tertiary-light');
+			transform: scale(1.08);
+
+			&::before {
+				content: ''
+			}
+		}
+
+		&__title {
+			font-size: 2em;
+		}
+
+		&__rgbtitle {
+			font-size: 1.5em;
+		}
+
+		&__hextitle {
+			font-size: 1.5em;
+		}
+
+	}

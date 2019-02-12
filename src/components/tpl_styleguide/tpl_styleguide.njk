@@ -1,0 +1,51 @@
+<section class="section styleguide">
+	<h1 class="h1 align-center">{{ label }}</h1>
+	<h2 class="h5  align-center">Version: {{ version }}</h2>
+	<h2 class="h3  align-center">Colors</h2>
+	{% inject "styleguide_colors/styleguide_colors.njk", styleguide_colors %}
+</section>
+
+
+<section>
+	<h1>Same Column Height</h1>
+	<div class="flex">
+		<div class="col">
+
+			<a href="#">
+				<img src="image.jpg" width="" height="" alt="Some sample words">
+			</a>
+
+			<h2>A little title</h2>
+			<p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit […]</p>
+
+			<a class="btn" href="#">Read more</a>
+
+		</div>
+
+		<div class="col">
+
+			<a href="#">
+				<img src="image.jpg" width="" height="" alt="Some sample words">
+			</a>
+
+			<h2>A little title</h2>
+			<p>Lorem ipsum dolor sit amet […]</p>
+
+			<a class="btn" href="#">Read more</a>
+
+		</div>
+
+		<div class="col">
+
+			<a href="#">
+				<img src="image.jpg" width="" height="" alt="Some sample words">
+			</a>
+
+			<h2>A little title</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur […]</p>
+
+			<a class="btn" href="#">Read more</a>
+
+		</div>
+	</div>
+</section>

@@ -1,4 +1,4 @@
-const es= document.querySelectorAll('.styleguide_color')
+const es= document.querySelectorAll('.styleguide_colors')
 
 let rgbToHex = (col) => {
 	if(col.charAt(0)=='r')
@@ -17,9 +17,9 @@ es.forEach((elem) => {
 	const style = getComputedStyle(elem)
 	const backgroundColor = style.backgroundColor
 	console.log(backgroundColor) // rgb(0, 0, 0)
-	const outputColorRGB = elem.querySelector('.styleguide_color__rgbtitle')
+	const outputColorRGB = elem.querySelector('.styleguide_colors__rgbtitle')
 	outputColorRGB.innerHTML = outputColorRGB.innerHTML + backgroundColor
 	var col=backgroundColor;
-	const outputColorHEX = elem.querySelector('.styleguide_color__hextitle')
+	const outputColorHEX = elem.querySelector('.styleguide_colors__hextitle')
 	outputColorHEX.innerHTML = outputColorHEX.innerHTML + rgbToHex(col)
 });
