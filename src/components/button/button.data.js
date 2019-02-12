@@ -1,4 +1,4 @@
 module.exports = {
-	color: 'light',
+	color: 'dark-color',
 	label: 'Button'
 }
