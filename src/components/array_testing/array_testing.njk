@@ -1,0 +1,22 @@
+<section class="section">
+	{% for item in headers %}
+		<div class="row">
+				{{ item.column }}
+			<div class="column small-12 large-12">
+				{% for item in item.subitems %}
+					{{ item.name }}
+				{% endfor %}
+			</div>
+		</div>
+	{% endfor %}
+</section>
+
+<section class="section">
+	<div class="row">
+		<div class="column small-12 large-12">
+			{% for item in headersfe %}
+				{{ item.name }}
+			{% endfor %}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,212 @@
+<div class="row">
+	<div class="column small-12 large-12">
+		<h2 class="h3 align-center">{{ header }}<a class="anchor" href="#typography" aria-hidden="true">#</a></h2>
+		{{bodytext | safe}}
+	</div>
+	<div class="column small-12 large-12">
+		<h4 class="s-subtitle" id="typography-paragraphs">Paragraphs<a class="anchor" href="#typography-paragraphs" aria-hidden="true">#</a></h4>
+		<p>Lorem ipsum dolor sit amet, consectetur <a href="#typography">adipiscing elit</a>.
+		Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.
+		</p>
+	</div>
+	<div class="column small-12 large-12">
+		            <h4 class="s-subtitle" id="typography-semantic-text">Semantic text elements<a class="anchor" href="#typography-semantic-text" aria-hidden="true">#</a></h4>
+		            <div class="docs-demo columns">
+		              <div class="column col-6 col-xs-12"><abbr title="Internationalization">I18N</abbr><code class="ml-2">abbr</code></div>
+		              <div class="column col-6 col-xs-12"><strong>Bold</strong><code class="ml-2">strong</code><code class="ml-2">b</code></div>
+		              <div class="column col-6 col-xs-12">
+		                <cite>Citation</cite><code class="ml-2">cite</code>
+		              </div>
+		              <div class="column col-6 col-xs-12"><code>Hello World!</code><code class="ml-2">code</code></div>
+		              <div class="column col-6 col-xs-12">
+		                <del>Deleted</del><code class="ml-2">del</code>
+		              </div>
+		              <div class="column col-6 col-xs-12"><em>Emphasis</em><code class="ml-2">em</code></div>
+		              <div class="column col-6 col-xs-12"><i>Italic</i><code class="ml-2">i</code></div>
+		              <div class="column col-6 col-xs-12"><ins>Inserted</ins><code class="ml-2">ins</code></div>
+		              <div class="column col-6 col-xs-12"><kbd>Ctrl + S</kbd><code class="ml-2">kbd</code></div>
+		              <div class="column col-6 col-xs-12">
+		                <mark>Highlighted</mark><code class="ml-2">mark</code>
+		              </div>
+		              <div class="column col-6 col-xs-12">
+		                <ruby>漢
+		                  <rt>kan</rt>字
+		                  <rt>ji</rt>
+		                </ruby><code class="ml-2">ruby</code>
+		              </div>
+		              <div class="column col-6 col-xs-12">
+		                <s>Strikethrough</s><code class="ml-2">s</code>
+		              </div>
+		              <div class="column col-6 col-xs-12"><samp>Sample</samp><code class="ml-2">samp</code></div>
+		              <div class="column col-6 col-xs-12">Text <sub>Subscripted</sub><code class="ml-2">sub</code></div>
+		              <div class="column col-6 col-xs-12">Text <sup>Superscripted</sup><code class="ml-2">sup</code></div>
+		              <div class="column col-6 col-xs-12">
+		                <time>20:00</time><code class="ml-2">time</code>
+		              </div>
+		              <div class="column col-6 col-xs-12">
+		                <u>Underline</u><code class="ml-2">u</code>
+		              </div>
+		              <div class="column col-6 col-xs-12">
+		                <var>x</var> =
+		                <var>y</var> + 2<code class="ml-2">var</code>
+		              </div>
+		            </div>
+	</div>
+	<div class="column small-12 large-12">
+	</div>
+	<div class="column small-12 large-12">
+	</div>
+	<div class="column small-12 large-12">
+	</div>
+</div>
+<section class="section ">
+	<div class="row">
+		<div class="column small-12 medium-6 large-6">
+			<h2 class="h3  align-center">{{ headings.header }}<a class="anchor" href="#typography" aria-hidden="true">#</a></h2>
+		{% for item in headings.content %}
+			<div class="column small-12 large-12">
+				<{{ item.size }}>{{ item.size }} {{ item.header }} <small class="label">{{ item.pixel }}</small></{{ item.size }}>
+			</div>
+		{% endfor %}
+<h2 class="h3  align-center">{{ headings.header }}<a class="anchor" href="#typography" aria-hidden="true">#</a></h2>
+			<table style="width:100%">
+			  <tr>
+			    <th>Firstname</th>
+			    <th>Lastname</th>
+			    <th>Age</th>
+			  </tr>
+			  <tr>
+			    <td>Jill</td>
+			    <td>Smith</td>
+			    <td>50</td>
+			  </tr>
+			  <tr>
+			    <td>Eve</td>
+			    <td>Jackson</td>
+			    <td>94</td>
+			  </tr>
+			</table>
+			<h2 class="h3  align-center">{{ headings.header }}<a class="anchor" href="#typography" aria-hidden="true">#</a></h2>
+			<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>.</p>
+			<hr />
+
+		</div>
+		<div class="column small-12 medium-6 large-6">
+<h2 class="h3  align-center">{{ headings.header }}<a class="anchor" href="#typography" aria-hidden="true">#</a></h2>
+			<header>
+				<h2 class="h2">Heading H2 with a Subtitle</h2>
+				<h5  class="h5">Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h5>
+			</header>
+			<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit
+				tempus accumsan.</p>
+				<hr />
+			<header>
+				<h3 class="h3">Heading with a Subtitle</h3>
+				<h6 class="h6">Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h6>
+			</header>
+			<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit
+			tempus accumsan.</p>
+			<hr />
+			<header>
+				<h4 class="h4">Heading with a Subtitle</h4>
+				<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+			</header>
+			<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit
+			tempus accumsan.</p>
+			<hr />
+		</div>
+
+	</div>
+</section>
+
+
+<div class="container" id="typography">
+
+            <h4 class="s-subtitle" id="typography-fonts">Fonts<a class="anchor" href="#typography-fonts" aria-hidden="true">#</a></h4>
+            <p>Spectre sets the most common and best <code>font-family</code> for each OS with fallback support in old systems.
+              There are also fonts targeted East Asian typography.
+            </p>
+            <pre class="code"><code><span class="hljs-comment">/* Western typography targeted */</span>
+<span class="hljs-attribute">font-family</span>: -apple-system, system-ui, BlinkMacSystemFont, <span class="hljs-string">"Segoe UI"</span>, Roboto, <span class="hljs-string">"Helvetica Neue"</span>, sans-serif;
+<span class="hljs-comment">/* Monospace typography targeted */</span>
+<span class="hljs-attribute">font-family</span>: <span class="hljs-string">"SF Mono"</span>, <span class="hljs-string">"Segoe UI Mono"</span>, <span class="hljs-string">"Roboto Mono"</span>, Menlo, Courier, monospace;
+
+<span class="hljs-comment">/* Chinese (lang="zh" and lang="zh-Hans") targeted */</span>
+<span class="hljs-attribute">font-family</span>: -apple-system, system-ui, BlinkMacSystemFont, <span class="hljs-string">"Segoe UI"</span>, Roboto, <span class="hljs-string">"PingFang SC"</span>, <span class="hljs-string">"Hiragino Sans GB"</span>, <span class="hljs-string">"Microsoft YaHei"</span>, <span class="hljs-string">"Helvetica Neue"</span>, sans-serif;
+<span class="hljs-comment">/* Chinese (lang="zh-Hant") targeted */</span>
+<span class="hljs-attribute">font-family</span>: -apple-system, system-ui, BlinkMacSystemFont, <span class="hljs-string">"Segoe UI"</span>, Roboto, <span class="hljs-string">"PingFang TC"</span>, <span class="hljs-string">"Hiragino Sans CNS"</span>, <span class="hljs-string">"Microsoft JhengHei"</span>, <span class="hljs-string">"Helvetica Neue"</span>, sans-serif;
+<span class="hljs-comment">/* Japanese (lang="ja") targeted */</span>
+<span class="hljs-attribute">font-family</span>: -apple-system, system-ui, BlinkMacSystemFont, <span class="hljs-string">"Segoe UI"</span>, Roboto, <span class="hljs-string">"Hiragino Sans"</span>, <span class="hljs-string">"Hiragino Kaku Gothic Pro"</span>, <span class="hljs-string">"Yu Gothic"</span>, YuGothic, Meiryo, <span class="hljs-string">"Helvetica Neue"</span>, sans-serif;
+<span class="hljs-comment">/* Korean (lang="ko") targeted */</span>
+<span class="hljs-attribute">font-family</span>: -apple-system, system-ui, BlinkMacSystemFont, <span class="hljs-string">"Segoe UI"</span>, Roboto, <span class="hljs-string">"Malgun Gothic"</span>, <span class="hljs-string">"Helvetica Neue"</span>, sans-serif;
+</code></pre>
+            <h4 class="s-subtitle" id="typography-blockquote">Blockquote<a class="anchor" href="#typography-blockquote" aria-hidden="true">#</a></h4>
+            <blockquote>
+              <p>The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life.</p>
+              <cite>- Bill Gates</cite>
+            </blockquote>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life. <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">cite</span>&gt;</span>- Bill Gates<span class="hljs-tag">&lt;/<span class="hljs-name">cite</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+</code></pre>
+            <h4 class="s-subtitle" id="typography-lists">Lists<a class="anchor" href="#typography-lists" aria-hidden="true">#</a></h4>
+            <div class="docs-demo columns">
+              <div class="column col-4 col-xs-12">
+                <ul class="list">
+                  <li>list item 1</li>
+                  <li>list item 2
+                    <ul>
+                      <li>list item 2.1</li>
+                      <li>list item 2.2</li>
+                      <li>list item 2.3</li>
+                    </ul>
+                  </li>
+                  <li>list item 3</li>
+                </ul>
+              </div>
+              <div class="column col-4 col-xs-12">
+                <ol class="list">
+                  <li>list item 1</li>
+                  <li>list item 2
+                    <ol>
+                      <li>list item 2.1</li>
+                      <li>list item 2.2</li>
+                      <li>list item 2.3</li>
+                    </ol>
+                  </li>
+                  <li>list item 3</li>
+                </ol>
+              </div>
+              <div class="column col-4 col-xs-12">
+                <dl class="list">
+                  <dt>description list term 1</dt>
+                  <dd>description list description 1</dd>
+                  <dt>description list term 2</dt>
+                  <dd>description list description 2</dd>
+                  <dt>description list term 3</dt>
+                  <dd>description list description 3</dd>
+                </dl>
+              </div>
+            </div>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- unordered list --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 2
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 2.1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 2.2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 2.3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- description list --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>description list term<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>description list description<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span>
+</code></pre>
+
+          </div>

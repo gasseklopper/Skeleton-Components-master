@@ -1,9 +1,10 @@
 <section class="section styleguide">
 	<h1 class="h1 align-center">{{ label }}</h1>
 	<h2 class="h5  align-center">Version: {{ version }}</h2>
-	<h2 class="h3  align-center">Colors</h2>
-	{% inject "styleguide_colors/styleguide_colors.njk", styleguide_colors %}
 </section>
+
+{% inject "styleguide_colors/styleguide_colors.njk", styleguide_colors %}
+{% inject "styleguide_typography/styleguide_typography.njk", styleguide_typography %}
 
 
 <section>

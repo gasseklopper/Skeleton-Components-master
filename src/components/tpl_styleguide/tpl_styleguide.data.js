@@ -9,5 +9,6 @@
 module.exports = {
 	label: 'StyleGuide',
 	version: '0.0.1',
-	styleguide_colors: '',
+	styleguide_colors: require('../styleguide_colors/styleguide_colors.data'),
+	styleguide_typography: require('../styleguide_typography/styleguide_typography.data'),
 }
