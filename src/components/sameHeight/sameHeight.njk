@@ -1,0 +1,32 @@
+<section>
+	<div class="row">
+		<div class="column small-12 align-center">
+			<h1>Same Column Height</h1>
+		</div>
+		{% for item in headers %}
+		<div class="column sameHeight small-12 medium-6 large-3">
+			<div class="sameHeight__col background-gray-color-light">
+				<a href="#">
+					<img src="https://via.placeholder.com/300.png/09f/fff" width="" height="" alt="Some sample words">
+				</a>
+				<div class="sameHeight__content">
+					<h2 class="h2">{{ item.header }}</h2>
+					{{ item.bodyshort | safe }}
+					{{ item.bodytext | safe }}
+					<div class="sameHeight__split">
+						<a class="button button--tertiary-dark" href="#">Read more</a>
+						<a class="button button--tertiary-light" href="#">Read more</a>
+					</div>
+				</div>
+				<div class="sameHeight__bottom">
+					<h2 class="h2 align-center">{{ item.header }}</h2>
+					<div class="sameHeight__split">
+						<a class="button button--secondary" href="#">Read more</a>
+						<a class="button button--quaternary" href="#">Read more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</section>

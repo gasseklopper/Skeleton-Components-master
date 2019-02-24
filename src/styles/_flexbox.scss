@@ -1,0 +1,133 @@
+
+.holygrail {
+		font-family: sans-serif;
+		font-size: 1.1em;
+		text-align: center;
+		color: #FFF;
+		min-height: 100vh;
+		width: 100%;
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+	.wrapper {
+max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+}
+	&__nav {
+		width: 100%;
+		//max-width: 1200px;
+		//margin-left: auto;
+		//margin-right: auto;
+		display: flex;
+		//flex-direction: row;
+		//justify-content: flex-end;
+
+		ul {
+			//width: 100%;
+			display: flex;
+			padding: 0;
+		}
+
+		li {
+			padding: 0;
+			display: inline;
+			//margin-right: $gutter;
+		}
+
+		&--left {
+			justify-content: flex-start;
+		}
+
+		&--right {
+			//align-content: flex-end;
+			justify-content: flex-end;
+			//background-color: red;
+		}
+
+	}
+
+	&__logo {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		top: 10px;
+		left: 0;
+		right: 0;
+	}
+
+
+	header {
+		left: 0;
+		z-index: 9;
+		height: 50px;
+		position: fixed;
+		width: 100%;
+		background: rgba(0,0,0,.6);
+		filter: drop-shadow(0 2px 4px rgba(22,22,24,.25));
+	}
+
+	&__content-header-bottom {
+		border-left: 65px solid transparent;
+		border-right: 65px solid transparent;
+		border-top: 36.6px solid rgba(0,0,0,.6);
+		filter: drop-shadow(0 2px 4px rgba(22,22,24,.25));
+		position: absolute;
+		top: 50px;
+		z-index: -1;
+		right: calc(50% - 65px);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	footer {
+		background: color('primary');
+		padding: 20px;
+		left: 0;
+		bottom: 0;
+		position: fixed;
+		width: 100%;
+	}
+
+	&__body {
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+		@media (min-width: $bpL) {
+				flex-direction: row;
+			}
+	}
+
+	&__hero {
+		color: #777;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__content {
+		flex: 1 1 auto;
+		color: #777;
+	}
+
+	&__sidebar{
+		background: color('secondary');
+		padding: 20px;
+		padding-bottom: $gutter*5;
+		@media (min-width: $bpL) {
+			flex: 0 0 260px;
+
+			}
+
+		&--one {
+			@media (min-width: $bpL) {
+				order: -1;
+			}
+		}
+
+		&--two {
+
+		}
+	}
+}
