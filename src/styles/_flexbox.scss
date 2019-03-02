@@ -1,57 +1,111 @@
 
 .holygrail {
-		font-family: sans-serif;
-		font-size: 1.1em;
-		text-align: center;
-		color: #FFF;
-		min-height: 100vh;
-		width: 100%;
-		display: flex;
-		flex: 1 1 auto;
-		flex-direction: column;
+	font-family: sans-serif;
+	font-size: 1.1em;
+	text-align: center;
+	color: #FFF;
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+
 	.wrapper {
-max-width: 1200px;
+		max-width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
-}
+	}
+
 	&__nav {
+		z-index: 12;
 		width: 100%;
 		//max-width: 1200px;
 		//margin-left: auto;
 		//margin-right: auto;
 		display: flex;
+		height: 50px;
 		//flex-direction: row;
-		//justify-content: flex-end;
+
 
 		ul {
-			//width: 100%;
+			height: 50px;
 			display: flex;
 			padding: 0;
 		}
 
 		li {
+			display: flex;
 			padding: 0;
-			display: inline;
-			//margin-right: $gutter;
+			display: flex;
+			align-items: center;
+
+			a {
+				position: relative;
+				font-weight: lighter;
+				color: #bbb;
+				padding: 10px 10px;
+				text-decoration: none;
+
+				&::before{
+				  position: absolute;
+				  width: 100%;
+				  height: 5px;
+				  left: 0px;
+				  top: 0px;
+				  content: '';
+				  background: #FFF;
+				  opacity: 0;
+				  transition: all 0.4s;
+				}
+
+				&::after{
+				  position: absolute;
+				  width: 100%;
+				  height: 0px;
+				  right: 0px;
+				  bottom: 0px;
+				  content: '';
+				  background: #FFF;
+				  opacity: 0;
+				  transition: all 0.4s;
+				}
+
+				&:hover::before{
+				  top: 100%;
+				  opacity: 1;
+				}
+
+				&:hover::after{
+				  height: 100%;
+				  opacity: 0.3;
+				}
+
+				&:hover{
+				  color: #fff;
+				}
+			}
 		}
 
 		&--left {
+
 			justify-content: flex-start;
+			li {
+				padding-left: $gutter/2;
+			}
 		}
 
 		&--right {
-			//align-content: flex-end;
 			justify-content: flex-end;
-			//background-color: red;
+			li {
+				padding-right: $gutter/2;
+			}
 		}
 
 	}
 
 	&__logo {
 		position: absolute;
-		margin-left: auto;
-		margin-right: auto;
-		top: 10px;
+		top: $gutter/2;
 		left: 0;
 		right: 0;
 	}
