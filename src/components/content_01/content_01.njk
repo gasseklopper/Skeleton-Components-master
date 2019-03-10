@@ -1,0 +1,42 @@
+<br>
+
+<section class="content_01">
+	<div class="row">
+	{% for item in content %}
+	{% set i = loop.index %}
+
+		<div class="column sameHeight small-12 medium-6 {% if i == 1%}large-7{% else %}large-5{% endif %}">
+
+			<div class="sameHeight__col {% if i == 1%}border-bottom{% endif %}">
+				<div class="content_01__box sameHeight__content">
+					<h2 class="h1">{{ item.header }}</h2>
+					{{ item.bodytext | safe}}
+					{{ item.quote | safe}}
+				</div>
+				<div class="sameHeight__bottom">
+					<button class="btn tooltip tooltip-right" data-tooltip="Lorem ipsum dolor sit amet">right tooltip</button>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+
+	{% for item in content2 %}
+	{% set i = loop.index %}
+		<div class="column sameHeight small-12 medium-6 {% if i == 1%}large-8{% else %}large-4{% endif %}">
+			{% for item in item.subitems %}
+			<div class="sameHeight__col background-tertiary" style="background-image: url({{item.image.src}}); background-repeat: no-repeat; background-size: cover;background-position: center;">
+				<div class="content_01__box sameHeight__content border-bottom">
+
+				</div>
+				<div class="sameHeight__bottom">
+					<div class="content_01__link align-right">
+						<a href="" target="_self" title="link" class=""><strong>VELILLUM DOLORE</strong></a>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+		</div>
+	{% endfor %}
+	</div>
+
+</section>
