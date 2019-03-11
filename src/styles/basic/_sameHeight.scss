@@ -16,7 +16,6 @@
 		margin-top: auto;
 		//padding: $gutter/2;
 	}
-
 }
 
 .sameHeight2 {
@@ -34,10 +33,9 @@
 		margin-top: auto;
 		//padding: $gutter/2;
 	}
-
 }
-
-.sameHeight_experiment {
+//----- prototype
+.sameHeight_prototype {
 	display: flex;
 
 	&__col {
@@ -66,5 +64,4 @@
 		display: flex;
 		justify-content: space-between;
 	}
-
 }
