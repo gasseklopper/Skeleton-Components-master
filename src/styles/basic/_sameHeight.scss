@@ -27,7 +27,7 @@
 
 	&__content {
 		//padding: 0 $gutter/2;
-		flex-grow: 1;
+		//flex-grow: 1;
 	}
 
 	&__bottom {
@@ -43,7 +43,8 @@
 
 	&__col {
 		display: flex;
-		width: 100%;
+		flex-direction: column;
+		width: 100;
 		//margin-bottom: $gutter*2;
 		// rethink image
 		img {
