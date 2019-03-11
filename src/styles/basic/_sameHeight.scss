@@ -17,6 +17,7 @@
 		//padding: $gutter/2;
 	}
 }
+//-----------------------
 
 .sameHeight2 {
 		display: flex;
@@ -34,13 +35,14 @@
 		//padding: $gutter/2;
 	}
 }
-//----- prototype
+
+
+//----- prototype-----------------------------
 .sameHeight_prototype {
 	display: flex;
 
 	&__col {
 		display: flex;
-		flex-direction: column;
 		width: 100%;
 		//margin-bottom: $gutter*2;
 		// rethink image
