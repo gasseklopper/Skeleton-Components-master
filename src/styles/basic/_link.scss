@@ -4,7 +4,7 @@
 		line-height: 16px;
 		font-size: .9em;
 		text-decoration: none;
-	//	color: color('primary');
+		color: color('primary');
 		&:hover {
 			text-decoration: underline;
 		}
@@ -22,7 +22,6 @@
 			}
 			&::after {
 				content: "";
-fill: red;
 				right: -24px;
 				top: -1px;
 				width: 16px;

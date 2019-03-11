@@ -13,11 +13,11 @@ module.exports = {
 				src: '',
 			},
 			image:{
-				    title: 'Cat',
-    alternative: 'Fluffy cat playing with a ball',
-    description: 'Cats love balls',
-    link: 'https://en.wikipedia.org/wiki/Cat',
-    src: 'http://via.placeholder.com/350x150',
+				title: 'Cat',
+				alternative: 'Fluffy cat playing with a ball',
+				description: 'Cats love balls',
+				link: 'https://en.wikipedia.org/wiki/Cat',
+				src: 'http://via.placeholder.com/350x150',
 			},
 			label: 'VELILLUM DOLORE',
 			href: {
@@ -27,7 +27,7 @@ module.exports = {
 			},
 			subitems:[
 				{
-
+//subitems
 				}
 			]
 		},
