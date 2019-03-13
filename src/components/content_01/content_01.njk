@@ -1,40 +1,22 @@
-<br>
 
-<div class="fullwidth background-tertiary">
-	<div class="row">
-			{% for item in content %}
-			{% set i = loop.index %}
-				<div class="column sameHeight2 small-12 medium-6 background-tertiary-dark {% if i == 1 %}large-7 border-bottom {% else %}large-5 {% endif %}" {% if item.background_image.src %} style="background-image: url({{item.background_image.src}}); background-repeat: no-repeat; background-size: cover;background-position: center;" {% endif %} >
-					<div class="content_01__box sameHeight2__content  background-tertiary">
-						<h4 class="h4 eyebrow tooltip tooltip-right" data-tooltip="Lorem ipsum dolor sit amet">{{ item.eyebrow_header }}</h4>
-						<h2 class="h1">{{ item.header }}</h2>
-						{{ item.bodytext | safe}}
-						{{ item.bodyshort | safe}}
-						{{ item.quote | safe}}
-					</div>
-					<div class="sameHeight2__bottom background-tertiary">
-						<button class="btn tooltip tooltip-right" data-tooltip="Lorem ipsum dolor sit amet">right tooltip</button>
-					</div>
-				</div>
-			{% endfor %}
-	</div>
-</div>
 
 <section class="content_01">
 	<div class="row">
 
 	{% for item in content %}
 	{% set i = loop.index %}
-		<div class="column sameHeight2 small-12 medium-6 background-tertiary-dark {% if i == 1 %}large-7 border-bottom {% else %}large-5 {% endif %}" {% if item.background_image.src %} style="background-image: url({{item.background_image.src}}); background-repeat: no-repeat; background-size: cover;background-position: center;" {% endif %} >
-			<div class="content_01__box sameHeight2__content  background-tertiary">
-				<h4 class="h4 eyebrow">{{ item.eyebrow_header }}</h4>
-				<h2 class="h1">{{ item.header }}</h2>
-				{{ item.bodytext | safe}}
-				{{ item.bodyshort | safe}}
-				{{ item.quote | safe}}
-			</div>
-			<div class="sameHeight2__bottom background-tertiary">
-				<button class="btn tooltip tooltip-right" data-tooltip="Lorem ipsum dolor sit amet">right tooltip</button>
+		<div class="column sameHeight small-12 medium-6 {% if i == 1 %}large-7{% else %}large-5{% endif %}">
+			<div class="sameHeight__col {% if i == 1 %}border-bottom{% endif %}" {% if item.background_image.src %} style="background-image: url({{item.background_image.src}}); background-repeat: no-repeat; background-size: cover;background-position: center;"{% endif %}>
+				<div class="content_01__box sameHeight__content ">
+					<h4 class="h4 eyebrow">{{ item.eyebrow_header }}</h4>
+					<h2 class="h1">{{ item.header }}</h2>
+					{{ item.bodytext | safe}}
+					{{ item.bodyshort | safe}}
+					{{ item.quote | safe}}
+				</div>
+				<div class="sameHeight__bottom">
+					<button class="btn tooltip tooltip-right" data-tooltip="Lorem ipsum dolor sit amet">right tooltip</button>
+				</div>
 			</div>
 		</div>
 	{% endfor %}
@@ -59,23 +41,43 @@
 		</div>
 	{% endfor %}
 
+
 	{% for item in content %}
 	{% set i = loop.index %}
-		<div class="column sameHeight small-12 medium-6 {% if i == 1 %}large-7{% else %}large-5{% endif %}">
-			<div class="sameHeight__col background-tertiary {% if i == 1 %}border-bottom{% endif %}" {% if item.background_image.src %} style="background-image: url({{item.background_image.src}}); background-repeat: no-repeat; background-size: cover;background-position: center;"{% endif %}>
-				<div class="content_01__box sameHeight__content ">
-					<h4 class="h4 eyebrow">{{ item.eyebrow_header }}</h4>
-					<h2 class="h1">{{ item.header }}</h2>
-					{{ item.bodytext | safe}}
-					{{ item.bodyshort | safe}}
-					{{ item.quote | safe}}
-				</div>
-				<div class="sameHeight__bottom">
-					<button class="btn tooltip tooltip-right" data-tooltip="Lorem ipsum dolor sit amet">right tooltip</button>
-				</div>
+		<div class="column sameHeight2 small-12 medium-6 background-tertiary-dark {% if i == 1 %}large-7 border-bottom {% else %}large-5 {% endif %}" {% if item.background_image.src %} style="background-image: url({{item.background_image.src}}); background-repeat: no-repeat; background-size: cover;background-position: center;" {% endif %} >
+			<div class="content_01__box sameHeight2__content  background-tertiary">
+				<h4 class="h4 eyebrow">{{ item.eyebrow_header }}</h4>
+				<h2 class="h1">{{ item.header }}</h2>
+				{{ item.bodytext | safe}}
+				{{ item.bodyshort | safe}}
+				{{ item.quote | safe}}
+			</div>
+			<div class="sameHeight2__bottom background-tertiary">
+				<button class="btn tooltip tooltip-right" data-tooltip="Lorem ipsum dolor sit amet">right tooltip</button>
 			</div>
 		</div>
 	{% endfor %}
 
 	</div>
 </section>
+<br>
+
+<div class="fullwidth background-tertiary">
+	<div class="row">
+			{% for item in content %}
+			{% set i = loop.index %}
+				<div class="column sameHeight2 small-12 medium-6 background-tertiary-dark {% if i == 1 %}large-7 border-bottom {% else %}large-5 {% endif %}" {% if item.background_image.src %} style="background-image: url({{item.background_image.src}}); background-repeat: no-repeat; background-size: cover;background-position: center;" {% endif %} >
+					<div class="content_01__box sameHeight2__content  background-tertiary">
+						<h4 class="h4 eyebrow tooltip tooltip-right" data-tooltip="Lorem ipsum dolor sit amet">{{ item.eyebrow_header }}</h4>
+						<h2 class="h1">{{ item.header }}</h2>
+						{{ item.bodytext | safe}}
+						{{ item.bodyshort | safe}}
+						{{ item.quote | safe}}
+					</div>
+					<div class="sameHeight2__bottom background-tertiary">
+						<button class="btn tooltip tooltip-right" data-tooltip="Lorem ipsum dolor sit amet">right tooltip</button>
+					</div>
+				</div>
+			{% endfor %}
+	</div>
+</div>

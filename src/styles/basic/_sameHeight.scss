@@ -1,15 +1,18 @@
 .sameHeight {
 	display: flex;
+	img {
+		margin: 0;
+	}
 
 	&__col {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		//margin-bottom: $gutter*2;
+		margin-bottom: $gutter*2;
 	}
 
 	&__content {
-		//padding: 0 $gutter/2;
+		padding: $gutter/2;
 	}
 
 	&__bottom {
@@ -23,16 +26,16 @@
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		//margin-bottom: $gutter*2;
+		margin-bottom: $gutter*2;
 
 	&__content {
-		//padding: 0 $gutter/2;
+		padding: 0 $gutter/2;
 		//flex-grow: 1;
 	}
 
 	&__bottom {
 		margin-top: auto;
-		//padding: $gutter/2;
+		padding: $gutter/2;
 	}
 }
 

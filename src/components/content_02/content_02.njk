@@ -1,0 +1,37 @@
+<section class="content_02">
+	<div class="row">
+
+	{% for item in content %}
+	{% set i = loop.index %}
+		<div class="column small-12">
+				<div class="content_02__box">
+					<h4 class="h4 eyebrow">{{ item.eyebrow_header }}</h4>
+					<h2 class="h1">{{ item.header }}</h2>
+				</div>
+		</div>
+	{% endfor %}
+
+	{% for item in content2 %}
+	{% set i = loop.index %}
+		<div class="column sameHeight small-12 {% if i == 1 %} medium-6 large-4 {% elseif i == 3 %} medium-12 large-3 {% else %} medium-6 large-5 {% endif %}">
+			<div class="sameHeight__col " {% if i == 3 %} style="background-image: url({{item.background_image.src}}); background-repeat: no-repeat; background-size: cover;background-position: center;"{% endif %}>
+				<div class="content_02__box sameHeight__content color-dark">
+					<h4 class="h4 eyebrow">{{ item.eyebrow_header }}</h4>
+					<h2 class="h1 ">{{ item.header }}</h2>
+					{{ item.bodytext | safe}}
+					{{ item.bodyshort | safe}}
+					{{ item.quote | safe}}
+{{ i }}
+				</div>
+{% if i == 1 %}
+				<div class="sameHeight__bottom">
+					<div class="link">
+						<a href="{{ item.href.value }}" target="{{ item.href.target }}" title="{{ item.href.title }}"><img src="https://via.placeholder.com/772x355.png/09f/fff" alt=""></a>
+					</div>
+				</div>
+{% endif %}
+			</div>
+		</div>
+	{% endfor %}
+	</div>
+</section>

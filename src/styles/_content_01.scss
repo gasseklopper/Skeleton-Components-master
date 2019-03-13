@@ -9,6 +9,18 @@
 
 }
 
+.content_02 {
+//background-color: red;
+	&__box {
+
+		h4 {
+		max-width: 100%;
+
+		}
+	}//box-end
+
+}
+
 // re think border bottom
 .border-bottom{
 	border-bottom: 1px solid black;
