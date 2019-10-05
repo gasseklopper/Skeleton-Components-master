@@ -1,1 +1,37 @@
-<a href="#" class="button button--{{ color }}">{{ label }}</a>
+<a href="#" class="{%if animated%}animated{% else %}button button--{{ color }}{% endif %}">
+	{%if animated%}
+		<div class="animated-button button button--{{ color }}" tabindex="0">
+			<div class="animated-button__content animated-button__content--stageone">Horizontal</div>
+			<div class="animated-button__content animated-button__content--stagetwo">HiddenHiddenHidden</div>
+		</div>
+	{% else %}
+		{{ label }}
+	{% endif %}
+</a>
+
+<a href="#" class="{%if animated%}animated{% else %}button button--{{ color }}{% endif %}">
+	{%if animated%}
+		<div class="animated-button-vertical button button--{{ color }}" tabindex="0">
+			<div class="animated-button-vertical__content animated-button-vertical__content--stageone">Horizontal</div>
+			<div class="animated-button-vertical__content animated-button-vertical__content--stagetwo">HiddenHiddenHidden</div>
+		</div>
+	{% else %}
+		{{ label }}
+	{% endif %}
+</a>
+
+
+<div class="animated-button button button--{{ color }}" tabindex="0">
+	<div class="animated-button__content animated-button__content--stageone">Horizontal</div>
+	<div class="animated-button__content animated-button__content--stagetwo">Hidden</div>
+</div>
+
+<div class="vertical animated button button--{{ color }} visible" tabindex="0">
+	<div class="animated button  animated__stageone">Vertical</div>
+	<div class="hidden  animated__content">Hidden</div>
+</div>
+
+<div class="animated fade button button--{{ color }} visible" tabindex="0">
+	<div class="visible  animated button animated__content">Fade In</div>
+	<div class="hidden  animated__content">Hidden</div>
+</div>
