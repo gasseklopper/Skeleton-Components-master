@@ -3,6 +3,7 @@ module.exports = {
 		'/styles/main.css'
 	],
 	scripts: [
-		'/scripts/main.js'
+		'/scripts/libs/anime.js',
+		'/scripts/main.js',
 	]
 }
